@@ -1,0 +1,25 @@
+div.gridContainer {
+	width: calc(500px);height: 500px;
+	background-color: #eee;
+	border: 1px solid #aaa;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(7, 1fr);
+	grid-gap: 1px;
+}
+
+.gridContainer > * {
+	background-color: #ddd;
+}
+
+.gridENum1 {
+	grid-column: 2 / 4;
+}
+
+.gridENum2 {
+	grid-column: 4 / 6;
+}
+
+.gridENum3 {
+	grid-column: 6 / 8;
+}
+
