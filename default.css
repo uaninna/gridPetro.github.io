@@ -1,0 +1,141 @@
+div.gridContainer {
+	width: calc(500px);height: 500px;
+	background-color: #eee;
+	border: 1px solid #aaa;
+	display: grid;
+	grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+	grid-gap: 5px;
+}
+
+.gridContainer > * {
+	background-color: #ddd;
+}
+
+.gridENum1 {
+	grid-area: 1 / 1 / 3 / 3;
+}
+
+.gridENum2 {
+	grid-area: 2 / 4 / 4 / 6;
+}
+
+.gridENum3 {
+	grid-area: 1 / 7 / 3 / 9;
+}
+
+.gridENum4 {
+	grid-area: 4 / 2 / 6 / 4;
+}
+
+.gridENum5 {
+	grid-area: 4 / 4 / 6 / 6;
+}
+
+.gridENum6 {
+	grid-area: 4 / 6 / 6 / 8;
+}
+
+.gridENum7 {
+	grid-area: 7 / 1 / 9 / 3;
+}
+
+.gridENum8 {
+	grid-area: 6 / 4 / 8 / 6;
+}
+
+.gridENum9 {
+	grid-area: 7 / 7 / 9 / 9;
+}
+
+@media (max-width: 500px) {
+	div.gridContainer {
+		width: 100%;height: 100%;
+		background-color: #eee;
+		border: 1px solid #aaa;
+		display: grid;
+		grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+		grid-gap: 5px;
+	}
+	.gridENum1 {
+		grid-area: 1 / 1 / 3 / 3;
+	}
+
+	.gridENum2 {
+		grid-area: 1 / 3 / 3 / 5;
+	}
+
+	.gridENum3 {
+		grid-area: 1 / 5 / 3 / 7;
+	}
+
+	.gridENum4 {
+		grid-area: 3 / 1 / 5 / 3;
+	}
+
+	.gridENum5 {
+		grid-area: 3 / 3 / 5 / 5;
+	}
+
+	.gridENum6 {
+		grid-area: 3 / 5 / 5 / 7;
+	}
+
+	.gridENum7 {
+		grid-area: 5 / 1 / 7 / 3;
+	}
+
+	.gridENum8 {
+		grid-area: 5 / 3 / 7 / 5;
+	}
+
+	.gridENum9 {
+		grid-area: 5 / 5 / 7 / 7;
+	}
+}
+
+@media (max-width: 300px) {
+	div.gridContainer {
+		width: 100%;height: 100%;
+		background-color: #eee;
+		border: 1px solid #aaa;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(6, 1fr);
+		grid-gap: 5px;
+	}
+	.gridENum1 {
+		grid-area: 1 / 1 / 2 / 1;
+	}
+
+	.gridENum2 {
+		grid-area: 2 / 1 / 3 / 1;
+	}
+
+	.gridENum3 {
+		grid-area: 3 / 1 / 4 / 1;
+	}
+
+	.gridENum4 {
+		grid-area: 4 / 1 / 5 / 1;
+	}
+
+	.gridENum5 {
+		grid-area: 5 / 1 / 6 / 1;
+	}
+
+	.gridENum6 {
+		grid-area: 6 / 1 / 7 / 1;
+	}
+
+	.gridENum7 {
+		grid-area: 7 / 1 / 8 / 1;
+	}
+
+	.gridENum8 {
+		grid-area: 8 / 1 / 9 / 1;
+	}
+
+	.gridENum9 {
+		grid-area: 9 / 1 / 10 / 1;
+	}
+}
